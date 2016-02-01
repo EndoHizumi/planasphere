@@ -1,0 +1,177 @@
+#welcome{
+position:absolute;
+display:none;
+top:0;
+bottom:0;
+left:0;
+right:0;
+margin:auto;
+width:400px;
+height:450px;
+background-color: #7E7E7E;
+overflow:auto;
+}
+
+#wel_content{
+position:relative;
+height:100%;
+}
+
+#wel_pic{
+position:absolute;
+width:auto;
+height:300px;
+top:30px;
+left:92px;
+}
+
+#wel_message {
+position: relative;
+top: 300px;
+display:inline-block;
+width:100%;
+
+}
+
+#msg_welcome {
+text-align:center;
+
+}
+
+#btn_cross{
+position:absolute;
+right:10px;
+top:10px;
+width:10px;
+height:10px;
+z-index:1;
+}
+
+#btn_cross:hover{
+opacity: 0.7;
+}
+
+#btn_cross:active{
+background-color:black;
+}
+
+#btn_history{
+position:absolute;
+bottom:10px;
+left:5%;
+width:90%;
+padding-top:10px;
+padding-bottom:10px;
+margin: 100 auto;
+border:1px solid;
+font-weight: bold;
+text-align:center;
+text-decoration: none;
+cursor:default;
+}
+
+#btn_history:hover{
+opacity:0.5;
+}
+
+#btn_history:active{
+background-color: #1E1E1E;
+}
+
+#history{
+position:absolute;
+top:20px;
+left:20px;
+width:90%;
+}
+
+.twitter-timeline{
+float:right;
+margin-top:30px !important;
+width:250px !important;
+height:93% !important;
+}
+
+@media screen and (max-width: 1000px) {
+.twitter-timeline{
+display:none !important;
+}
+}
+@media screen and (max-width: 435px) {
+#welcome{
+    width: 260px;
+    height: 310px;
+    top: -70px;
+}
+
+#wel_content{
+position:relative;
+height:100%;
+}
+
+#wel_pic{
+    position: absolute;
+    height: 56%;
+    top: 30px;
+    left: 67px;
+}
+
+#wel_message {
+position: relative;
+top: 180px;
+display:inline-block;
+width:100%;
+
+}
+
+#msg_welcome {
+text-align:center;
+
+}
+
+#btn_cross{
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 25px;
+    height: 20px;
+}
+
+#btn_cross:hover{
+opacity: 0.7;
+}
+
+#btn_cross:active{
+background-color:black;
+}
+
+#btn_history{
+position:absolute;
+left:5%;
+width:90%;
+padding-top:10px;
+padding-bottom:10px;
+margin: 100 auto;
+border:1px solid;
+font-weight: bold;
+text-align:center;
+text-decoration: none;
+cursor:default;
+}
+
+#btn_history:hover{
+opacity:0.5;
+}
+
+#btn_history:active{
+background-color: #1E1E1E;
+}
+
+#history{
+position:absolute;
+top:20px;
+left:20px;
+width:90%;
+overflow:auto;
+}
+}

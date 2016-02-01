@@ -1,0 +1,42 @@
+
+#containar{
+  width:56%;
+  height:1%;
+  background-color: #111;
+  margin-top:2%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+}
+
+#title{
+  width:100%;
+  height:5%;
+  margin-top: -3%;
+  text-align:center;
+  background-color: #333;
+}
+#titlename{
+  display: block;
+  position: relative;
+  top: 16%;
+}
+
+#contentcontainar{
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  #containar{
+  width:95%;
+  }
+  }
+@media screen and (max-width: 435px) {
+
+  #contentcontainar{
+  height:95%;
+  }
+
+  #title{
+    height:10%;
+  }
+}
