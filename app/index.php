@@ -8,7 +8,7 @@
     switch ($category) {
      case 'team':
        require("view.php");
-       CretatePage($category,$value);
+       CretatePage($category,$value,"member/listTempletehtml.php");
      break;
      case 'page':
 

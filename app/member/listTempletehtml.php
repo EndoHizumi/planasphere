@@ -21,7 +21,7 @@
   <div id="teamContent">
     <?php foreach($memberLists as $memberinfo){?>
       <div id ="<?php echo $memberinfo["ID"]; ?>" class="member">
-        <img width="48px" height="48px" id="icon" class="no_image" src= <?php require_once(dirname( __FILE__ )."/../GetTwitterIcon.php"); echo(GetUsericon($memberinfo["TwitterID"],"normal")); ?>>
+        <img width="48px" height="48px" id="icon" class="no_image" src= <?php require_once("/GetTwitterIcon.php"); echo(GetUsericon($memberinfo["TwitterID"],"normal")); ?>>
         <span id="name" class="upper"><?php echo $memberinfo["Name"]; ?></span>
         <a href="http://twitter.com/<?php echo $memberinfo["TwitterID"]; ?>">
           <span id="twitterid" class="under"><?php echo $memberinfo["TwitterID"]; ?></span>

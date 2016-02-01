@@ -1,7 +1,7 @@
 <?php
 
 function ShowTeamMembers($teamname){
-  require("../../Common.php");
+  require("../Common.php");
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $stmt = $pdo -> prepare("SELECT * FROM members WHERE Team=:team");
   $stmt -> bindParam(":team",$teamname);

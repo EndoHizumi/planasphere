@@ -2,7 +2,7 @@ $(document).ready(function(){
 $(".team").click(function(){
   $.ajax({
     type:'GET',
-    url:'app/member/index.php',
+    url:'app/index.php',
     data:'category='+$(this).attr("class")+'&value='+$(this).attr("id"),
     success: function(data){
       $("#content").html(data);
