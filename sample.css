@@ -1,0 +1,94 @@
+body{
+background-color:black;
+background-repeat:no-repeat;
+}
+
+.bootlogo{
+width:450px;
+height:350px;
+margin:100 auto
+}
+
+#logo{
+display:block;
+width:300px;
+height:100%;
+margin-left:auto;
+margin-right:auto;
+min-width:250px;
+}
+
+#enblem_one{
+display:inline;
+width:50px;
+height:100%;
+
+}
+
+#progress {
+ background-color: white;
+animation: anime1 7s linear 0s 1 ;
+-webkit-animation: anime1 7s linear 0s 1;
+animation-fill-mode: forwards;
+}
+
+#icons{
+height:50px;
+width:100%;
+margin-bottom:10px;
+overflow:hidden;
+}
+
+
+.emblems{
+height:50px;
+margin-left:3px;
+}
+
+#p_name{
+display:inline;
+margin-top:50px;
+margin-left:160px;
+color:white;
+
+}
+
+@keyframes anime1 {
+0% {width: 0px; height: 10px;}
+100% {width: 100%; height: 10px;}
+}
+@-webkit-keyframes  anime1 {
+0% {width: 0px; height: 10px;}
+100% {width: 100%; height: 10px;}
+}
+
+@media screen and (max-width: 480px){
+
+.bootlogo{
+width:200px;
+height:180px;
+}
+
+#logo{
+display:block;
+width:150px;
+height:100%;
+margin-left:auto;
+margin-right:auto;
+min-width:150px;
+}
+
+#p_name{
+display:inline;
+margin-top:50px;
+margin-left:45px;
+color:white;
+}
+
+
+#status{
+margin-bottom:20px;
+
+}
+
+}

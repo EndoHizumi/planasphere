@@ -1,0 +1,47 @@
+body{
+  background-color: rgb(84,84,84);
+}
+#containar{
+  display: none;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  width: 25%;
+}
+.login{
+  height: 40%;
+}
+.logout{
+  height: 15%;
+}
+
+#Usericon{
+  border-radius: 200px;
+  width: 250px;
+  margin-left: 35px;
+}
+
+#loaderImage{
+  display: none;
+  position: relative;
+  left: 39.5%;
+  top: 10px;
+}
+.message{
+  color: #f1f1f1;
+}
+#msg_welcome{
+  font-size: xx-large;
+  margin-top: 20px;
+  margin-left: 22px;
+}
+
+#status{
+  display: none;
+  position: relative;
+  top: 15px;
+  left: 60px;
+}
