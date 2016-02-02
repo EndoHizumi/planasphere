@@ -27,7 +27,6 @@
   $decodefilepath= $Chippai -> Chippai_decode("welcome.php");
   $Chippai -> show($decodefilepath);
   if(empty($result['Error'])){
-    $_SESSION["logined"]=true;
     echo("<script> setTimeout('location.replace(\"/plana/main.php\")',10000); </script>");
   }
 
