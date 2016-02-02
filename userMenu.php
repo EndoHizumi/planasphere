@@ -13,9 +13,9 @@ $userInfo = [["userName"=>"Guest","profileImage"=>"icons/guest.png"]];
  <span class="user_content" id="user_name"><?php echo mb_strimwidth($userInfo[0]['userName'] ,0,10 )?></span>
  <?php
  if($logined===true){
-   require("login.html");
+   require_once("login.html");
  }else{
-   require("logout.html");
+   require_once("logout.html");
  }
  ?>
 
