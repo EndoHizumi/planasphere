@@ -10,8 +10,8 @@
        require("view.php");
        CretatePage($category,$value,"member/listTempletehtml.php");
      break;
-     case 'page':
-
+     case 'logout':
+       header('location: /plana/login/logout.php');
      break;
      default:
 

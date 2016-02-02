@@ -30,12 +30,15 @@ var ua = navigator.userAgent;
 
 				});
 		});
-		$("#btn_app05").click(function(){
-			window.open("http://twitter.com/planisphere00");
+			$("#btn_app05").click(function(){
+					window.open("http://twitter.com/planisphere00");
 		  });
 
 			$("#uList04").click(function(){
 					location.replace("login/login.php");
+			});
+			$("#uList05").click(function(){
+					location.replace("app/index.php?category=logout");
 			});
 
 			$("#uList03").click(function(){

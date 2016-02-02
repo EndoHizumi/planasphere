@@ -18,6 +18,7 @@ function RunQueryLite($query){
     $stmt = $pdo -> prepare($query);
     $stmt -> execute();
     $listmembers=$stmt -> fetchALL(PDO::FETCH_ASSOC);
+    $stmt-> closeCursor();
     return $listmembers;
   } catch (PDOException $e) {
     $exceptionArray = ["Error"=>"PDOException","ErrorMsg"=>$e->getMessage()];
@@ -25,6 +26,20 @@ function RunQueryLite($query){
   }
 
 }
+
+function RunQueryNR($query,$placeHolder,$param){
+  global $pdo;
+  $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $stmt = $pdo -> prepare($query);
+  $stmt -> bindParam($placeHolder,$param);
+  try {
+  $stmt -> execute();
+} catch (PDOException $e) {
+  $exceptionArray = ["Error"=>"PDOException","ErrorMsg"=>$e->getMessage()];
+ return $exceptionArray;
+}
+      $stmt-> closeCursor();
+  }
 
 function RunQuery($query,$placeHolder,$param){
   global $pdo;
@@ -38,6 +53,7 @@ function RunQuery($query,$placeHolder,$param){
  return $exceptionArray;
 }
   $listmembers=$stmt -> fetchALL(PDO::FETCH_ASSOC);
+      $stmt-> closeCursor();
   return $listmembers;
 }
 
