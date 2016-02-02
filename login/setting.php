@@ -1,4 +1,4 @@
 <?php
-define( 'CONSUMER_KEY', '4RjTJ6S9kiaxLQG30ELZdvqA1' );
-define( 'CONSUMER_SECRET', 'soLfJgX4Cf5slSaCgwEFQquZ0HbhkyCqkOoi44mYUhqGcwM6Jl' );
-define( 'OAUTH_CALLBACK', 'http://ws-factory.hoyo.asia/plana/login/callback.php' );
+define( 'CONSUMER_KEY', 'YOU_CONSUMER_KEY' );
+define( 'CONSUMER_SECRET', 'YOU_CONSUMER_SECRET' );
+define( 'OAUTH_CALLBACK', 'YOU_CALLBACK' );
