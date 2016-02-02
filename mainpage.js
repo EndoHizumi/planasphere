@@ -1,6 +1,5 @@
 $(document).ready(function(){
 var login = false;
-LoginCheck(login);
 var ua = navigator.userAgent;
 		$("#btn_app01").click(function(){
 			window.location.reload();
