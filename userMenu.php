@@ -1,10 +1,14 @@
 <?php
 require("ServerConfigManeger.php");
-$userInfo = [["userName"=>"Guest","profileImage"=>"icons/guest.png"]];
+$userInfoDefault = [["userName"=>"Guest","profileImage"=>"icons/guest.png"]];
   $clientAdress= $_SERVER["REMOTE_ADDR"];
   $RegistrationAdress= GetIPAdress($clientAdress);//渡されたIPアドレスが登録されいるかDBへ問い合わせるメソッド
   if(isset($RegistrationAdress)){
     $userInfo= GetUserName($_COOKIE["PHPSESSID"]); //渡されたセッションIDをもとにユーザー情報をDBへ問い合わせるメソッド(戻り値：ユーザー名とアイコンのURL)
+    if(isset($userInfo)==false){
+      $userInfo=$userInfoDefault;
+    }
+    var_dump($userInfo);
     $logined = true;
   }
  ?>
