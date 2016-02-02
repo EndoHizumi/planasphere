@@ -421,11 +421,7 @@
 	<body>
 
 		<div id="navibar">
-			<div  id="user" >
-				<img class="user_content" id="user_icon" src="icons/guest.png">
-				<span class="user_content" id="user_name">Guest</span>
-				<?php require("menu.html"); ?>
-			</div>
+			<?php include("userMenu.php") ?>
 			<img class="status_icons" id="wave" src="img/wave.png">
 			<span  id="clock" class="status_icons" >17:56</span>
 		</div>
