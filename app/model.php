@@ -20,7 +20,7 @@ function RunQueryLite($query){
     $listmembers=$stmt -> fetchALL(PDO::FETCH_ASSOC);
     return $listmembers;
   } catch (PDOException $e) {
-    $exceptionArray = ["Error"=>"PDOException","ErrorMsg"=>$e->getMessage()]
+    $exceptionArray = ["Error"=>"PDOException","ErrorMsg"=>$e->getMessage()];
    return $exceptionArray;
   }
 
@@ -34,7 +34,7 @@ function RunQuery($query,$placeHolder,$param){
   try {
   $stmt -> execute();
 } catch (PDOException $e) {
-  $exceptionArray = ["Error"=>"PDOException","ErrorMsg"=>$e->getMessage()]
+  $exceptionArray = ["Error"=>"PDOException","ErrorMsg"=>$e->getMessage()];
  return $exceptionArray;
 }
   $listmembers=$stmt -> fetchALL(PDO::FETCH_ASSOC);
