@@ -1,5 +1,6 @@
 $(document).ready(function(){
 var login = false;
+LoginCheck(login);
 var ua = navigator.userAgent;
 		$("#btn_app01").click(function(){
 			window.location.reload();
@@ -56,6 +57,7 @@ var ua = navigator.userAgent;
 			function LoginCheck(login){
 				if (window.navigator.cookieEnabled) {
 					login = $.cookie("logined");
+					console.log("logined!!");
 				}
 				else {
 					alert("クッキーが利用できないため、自動ログインに失敗しました。");	// クッキーの受け入れが無効時の処理
