@@ -28,7 +28,7 @@
 
   $result = setcookie('logined',true,time()+3600*24*7);
   if($result===true){
-    echo("<script>location.replace('/plana/main.php');</script>");
+    echo("<script> setTimeout('location.replace(\"/plana/main.php\")',10000); </script>");
   }
 
  ?>
