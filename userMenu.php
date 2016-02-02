@@ -8,7 +8,6 @@ $userInfoDefault = [["userName"=>"Guest","profileImage"=>"icons/guest.png"]];
     if(empty($userInfo)){
       $userInfo=$userInfoDefault;
     }
-    var_dump($userInfo);
     $logined = true;
   }
  ?>
