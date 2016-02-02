@@ -9,6 +9,8 @@ $userInfoDefault = [["userName"=>"Guest","profileImage"=>"icons/guest.png"]];
       $userInfo=$userInfoDefault;
     }
     $logined = true;
+  }else{
+    $userInfo=$userInfoDefault;
   }
  ?>
  <div  id="user" >
