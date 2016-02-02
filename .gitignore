@@ -27,6 +27,8 @@ $RECYCLE.BIN/
 .DS_Store
 .AppleDouble
 .LSOverride
+login/setting.php
+login/callback.php
 
 # Thumbnails
 ._*
