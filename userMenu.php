@@ -5,7 +5,7 @@ $userInfoDefault = [["userName"=>"Guest","profileImage"=>"icons/guest.png"]];
   $RegistrationAdress= GetIPAdress($clientAdress);//渡されたIPアドレスが登録されいるかDBへ問い合わせるメソッド
   if(isset($RegistrationAdress)){
     $userInfo= GetUserName($_COOKIE["PHPSESSID"]); //渡されたセッションIDをもとにユーザー情報をDBへ問い合わせるメソッド(戻り値：ユーザー名とアイコンのURL)
-    if(isset($userInfo)==false){
+    if(empty($userInfo)){
       $userInfo=$userInfoDefault;
     }
     var_dump($userInfo);
