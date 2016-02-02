@@ -5,6 +5,7 @@ function CretatePage($category,$value,$templateFilePath){
   $memberLists = ShowTeamMembers($value);
   $Chippai = new Chippai();
   $Chippai -> memberLists = $memberLists;
-  $Chippai -> show($templateFilePath);
+  $decodefilepath= $Chippai -> Chippai_decode($templateFilePath);
+  $Chippai -> show($decodefilepath);
 }
  ?>

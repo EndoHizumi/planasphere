@@ -1,10 +1,14 @@
 ﻿<?php
-try {
-$pdo = new PDO('mysql:host=127.0.0.1;dbname=planasphere;charset=utf8','root','php1850',
-array(PDO::ATTR_EMULATE_PREPARES => false));
-} catch (PDOException $e) {
- echo('データベース接続失敗。'.$e->getMessage());
- return;
+$pdo=null;
+function connect(){
+  try {
+    global $pdo;
+    $pdo = new PDO('mysql:host=127.0.0.1;dbname=planasphere;charset=utf8','root','php1850',
+    array(PDO::ATTR_EMULATE_PREPARES => false));
+  } catch (PDOException $e) {
+    echo('データベース接続失敗。'.$e->getMessage());
+    return;
+  }
 }
 
 function ShowTeamMembers($teamname){
@@ -13,12 +17,12 @@ function ShowTeamMembers($teamname){
 
 function RunQueryLite($query){
   global $pdo;
+  connect();
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   try {
     $stmt = $pdo -> prepare($query);
     $stmt -> execute();
     $listmembers=$stmt -> fetchALL(PDO::FETCH_ASSOC);
-    $stmt-> closeCursor();
     return $listmembers;
   } catch (PDOException $e) {
     $exceptionArray = ["Error"=>"PDOException","ErrorMsg"=>$e->getMessage()];
@@ -29,6 +33,7 @@ function RunQueryLite($query){
 
 function RunQueryNR($query,$placeHolder,$param){
   global $pdo;
+  connect();
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $stmt = $pdo -> prepare($query);
   $stmt -> bindParam($placeHolder,$param);
@@ -43,6 +48,7 @@ function RunQueryNR($query,$placeHolder,$param){
 
 function RunQuery($query,$placeHolder,$param){
   global $pdo;
+  connect();
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   $stmt = $pdo -> prepare($query);
   $stmt -> bindParam($placeHolder,$param);
@@ -53,7 +59,7 @@ function RunQuery($query,$placeHolder,$param){
  return $exceptionArray;
 }
   $listmembers=$stmt -> fetchALL(PDO::FETCH_ASSOC);
-      $stmt-> closeCursor();
+  $stmt -> closeCursor();
   return $listmembers;
 }
 
