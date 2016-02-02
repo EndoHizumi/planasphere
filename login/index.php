@@ -16,10 +16,10 @@
   $TwitterID = $user -> screen_name;
   $sessionID = session_id();
   $ipadress = $_SERVER["REMOTE_ADDR"];
-  $$profileImage = $user -> profile_image_url;
+  $profileImage = $user -> profile_image_url;
 
   require_once("../app/model.php");
-  $result= RunQueryLite("INSERT INTO users (userID,userName,TwitterID,sessionID,ipadress,profileImage) VALUES($userID,'$userName','$TwitterID','$sessionID','$ipadress','$profileImage')");
+  $result= RunQueryLite("INSERT INTO users (userID,userName,TwitterID,sessionID,ipadress,profileImag) VALUES($userID,'$userName','$TwitterID','$sessionID','$ipadress','$profileImage')");
   $Chippai = new Chippai();
   $Chippai -> icon = $user -> profile_image_url;
   $Chippai -> Name = $user -> name;
@@ -27,7 +27,7 @@
   $decodefilepath= $Chippai -> Chippai_decode("welcome.php");
   $Chippai -> show($decodefilepath);
   var_dump($result);
-  if($result===true){
+  if(empty($result['Error'])){
     $_SESSION["logined"]=true;
     echo("<script> setTimeout('location.replace(\"/plana/main.php\")',10000); </script>");
   }
