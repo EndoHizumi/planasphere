@@ -32,9 +32,13 @@ login/callback.php
 *.txt
 *.txt*
 login/login.php
-
+*~
 # Thumbnails
 ._*
+img/
+bg/
+icons/
+datas/
 
 # Files that might appear in the root of a volume
 .DocumentRevisions-V100

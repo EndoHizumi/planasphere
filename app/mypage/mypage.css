@@ -1,0 +1,97 @@
+
+#mypagecontainar{
+  display: inline-flex;
+  width:98%;
+  height:98%;
+  background-color:#000000;
+  color:#ffffff;
+  margin-left: 1%;
+}
+#FAlist{
+  width:20%;
+  height:100%;
+  background-color: rgb(24, 23, 23);
+}
+#FAnameField span{
+  font-size: large;
+  font-weight: bold;
+}
+#userBox #icon{
+  border-radius: 50px;
+  width: 50px;
+  margin-left: 3%;
+}
+#userBox{
+  position: relative;
+  top: 1%;
+  border-bottom: solid 1px rgb(218, 219, 221);
+}
+#userBox span{
+  text-align: center;
+  font-weight: bold;
+
+}
+.ModelNumber{
+  list-style: outside none none;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-size: x-large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px rgb(218, 219, 221);
+  color: #F8F8F8;
+}
+
+#FAlist li:hover {
+  background-color:rgba(74,70,73,0.7);
+}
+
+#editView{
+  overflow: auto;
+  width: 80%;
+}
+#editView textarea{
+  width: 97%;
+  line-height: 1em;
+  margin-left: 1%;
+  height: 34em;
+}
+#Submit{
+  width: 50%;
+  height: 10%;
+  margin: 8px 25%;
+}
+#SelectImageField{
+  background-color: #1a1a1a;
+
+}
+#uploadBox{
+  display: inline-block;
+  position: relative;
+}
+.imageview{
+  background-color: #777777;
+  width: 190px;
+  height: 125px;
+}
+.input{
+  opacity: 0;
+  display: block;
+  width: 190px;
+  height: 125px;
+  position: absolute;
+  top:0;
+}
+#complete {
+    position: relative;
+    top: 50%;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    margin: 0 auto;
+    width: 34%;
+    height: 35px;
+    font-weight: bold;
+    font-size: xx-large;
+  }

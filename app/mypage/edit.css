@@ -1,0 +1,10 @@
+#editView textarea{
+  width: 97%;
+  line-height: 15.5em;
+  margin-left: 1%;
+}
+#editView button{
+  width: 50%;
+  height: 6%;
+  margin: 8px 25%;
+}

@@ -1,0 +1,80 @@
+
+#logo{
+  height:100%;
+}
+#pic_logo{
+  display:block;
+  margin:0 auto;
+}
+#mainContainar{
+  margin: 0 auto;
+  width:571px;
+  background-color:#000000;
+  color:#ffffff;
+}
+
+#teamContainar{
+  width:100%;
+  height: 4.6%;
+}
+
+.team{
+  position: relative;
+  left: 2.5%;
+  display:inline-block;
+  margin: -0.5%;
+  width: 19.4%;
+  height: 100%;
+}
+.team:hover{
+  background-image: url(../../img/goldBar2.png);
+}
+#Others:hover{
+  background-image: url(../../img/redBar.png);
+}
+#Lost:hover{
+  background-image: url(../../img/brownsBar.png);
+}
+
+.member{
+    position: relative;
+    border: solid 1px #f1f1f1;
+}
+#teamContent span{
+  position: absolute;
+}
+
+.upper{
+    top:10px;
+}
+
+.under{
+    top:30px;
+}
+
+#name{
+  left:54px;
+}
+
+#twitterid{
+  left:54px;
+}
+a{
+    color:rgb(80,55,237);
+}
+a:hover{
+  color:rgb(198,67,54);
+}
+
+.machine{
+  right:15px;
+}
+#emblem{
+  position: absolute;
+  left: 195px;
+}
+#constel{
+  top:35px;
+  left: 195px;
+  font-size: small;
+}

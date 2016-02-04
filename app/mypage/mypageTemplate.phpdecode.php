@@ -12,15 +12,15 @@
   <div id="mypagecontainar">
     <div id="FAlist">
       <div id="userBox">
-        <img id="icon" src ="{:: $_SESSION['profileImage'] :}" />
+        <img id="icon" src ="<?php echo $_SESSION['profileImage'] ?>" />
         <span>機体情報登録画面</span>
       </div>
       <ul>
-        {: foreach($numberlist as $number) %then :}
-        <li class="ModelNumber" modelNumber="{:: $number['ModelNumber'] :}">
-          {:: $number['ModelNumber'] :}
+        <?php foreach($numberlist as $number) { ?>
+        <li class="ModelNumber" modelNumber="<?php echo $number['ModelNumber'] ?>">
+          <?php echo $number['ModelNumber'] ?>
         </li>
-        {: %end :}
+        <?php } ?>
       </ul>
     </div>
     <div id="editView">
