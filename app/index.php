@@ -22,7 +22,11 @@ session_start();
      break;
      case 'hanger':
        require("view.php");
-       CretatePage5($category,$value,"member/listTempletehtml.php");
+       CretatePage5($category,$value,"hanger/FAlistTempletehtml.php");
+     break;
+     case 'detail':
+       require("view.php");
+       CretatePage6($category,$value,"hanger/slider.php");
      break;
      default:
 

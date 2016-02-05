@@ -4,6 +4,19 @@ var ua = navigator.userAgent;
 		$("#btn_app01").click(function(){
 			window.location.reload();
 		  });
+			$("#btn_app02").click(function(){	$("#content").load("app/index.php?category=hanger&value=Alpha",function(){
+						if ((ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('iPhone') > 0 || ua.indexOf('Blackberry') > 0 || ua.indexOf('iPad') > 0){
+							$("#containar").animate({
+								height:"90%"
+							});
+						}else{
+							$("#containar").animate({
+								height:"97%"
+							});
+						}
+
+					});
+			});
 		$("#btn_app03").click(function(){	$("#content").load("app/index.php?category=team&value=Alpha",function(){
 					if ((ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('iPhone') > 0 || ua.indexOf('Blackberry') > 0 || ua.indexOf('iPad') > 0){
 						$("#containar").animate({

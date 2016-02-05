@@ -24,8 +24,15 @@ function ShowModelNumber($username){
 }
 
 function ShowFAInfo($ModelNumber){
-  return RunQuery("SELECT * FROM garage WHERE ModelNumber=:name",":name",$ModelNumber);
+  return RunQuery("SELECT * FROM plana_members LEFT JOIN garage ON plana_members.ModelNumber = garage.ModelNumber
+WHERE plana_members.`ModelNumber`=:ModelNumber ORDER BY `plana_members`.`ID` ASC ",":ModelNumber",$ModelNumber);
 }
+
+function ShowFAlist($teamname){
+  return RunQuery("SELECT plana_members.ID, plana_members.ModelNumber,plana_members.FAname,garage.position1,plana_members.team,plana_members.emblem FROM plana_members LEFT JOIN garage ON plana_members.ModelNumber = garage.ModelNumber
+WHERE `team` = :team AND `position1` IS NOT NULL ORDER BY `plana_members`.`ID` ASC ",":team",$teamname);
+}
+
 
 function escapehtml($htmlcode){
   return strip_tags($htmlcode ,"<br>");

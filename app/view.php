@@ -39,4 +39,24 @@ function CretatePage4($category,$value,$templateFilePath){
   $decodefilepath= $Chippai -> Chippai_decode($templateFilePath);
   $Chippai -> show($decodefilepath);
 }
+
+function CretatePage5($category,$value,$templateFilePath){
+  require("../Chippai.php");
+  require("model.php");
+  $memberLists = ShowFAlist($value);
+  $Chippai = new Chippai();
+  $Chippai -> memberLists = $memberLists;
+  $decodefilepath= $Chippai -> Chippai_decode($templateFilePath);
+  $Chippai -> show($decodefilepath);
+}
+
+function CretatePage6($category,$value,$templateFilePath){
+  require("../Chippai.php");
+  require("model.php");
+  $memberLists = ShowFAInfo($value);
+  $Chippai = new Chippai();
+  $Chippai -> memberLists = $memberLists;
+  $decodefilepath= $Chippai -> Chippai_decode($templateFilePath);
+  $Chippai -> show($decodefilepath);
+}
  ?>

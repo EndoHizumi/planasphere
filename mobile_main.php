@@ -1,4 +1,5 @@
-﻿<!--
+<?php session_start(); ?>
+<!--
 　　　　　　　　　　　 ／|
 　　　　　　　　　　　| 　 |
 .　　　　　　　　　 ／　／＼
@@ -407,12 +408,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<link rel="stylesheet" href="mainpage_mobile.css" type="text/css">
-		<link rel="stylesheet" href="app/home/home.css" type="text/css">
 		<link rel="stylesheet" href="app/reglations/reg.css" type="text/css">
-		<meta name="viewport" content="width=device-width,,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href= "app/member/listTemplete.css" type="text/css">
+		<link rel="stylesheet" href="mainpage.css" type="text/css">
+		<link rel="stylesheet" href="app/home/home.css" type="text/css">
+		<link rel="stylesheet" href="app/mypage/mypage.css" type="text/css">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="jquery.cookie.js"></script>
 		<script src="mainpage.js"></script>
+
 		<title>PlanOS Ver 0.8  build 20160102 </title>
 		<meta name="keywords" content="Planasphere プラナスフィア フレームアームズ" />
 		<meta name="description" content="月陣営の独立FA部隊 プラナスフィアのホームページです。" />
