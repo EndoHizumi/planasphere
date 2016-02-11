@@ -5,6 +5,14 @@ $(document).ready(function(){
     console.log(targetimg);
     upload(file,targetimg);
   });
+
+$('.imageview').error(function() {
+       $(this).attr({
+           src: 'img/camera.png',
+           alt: 'no image'
+       });
+   });
+
   $("#uploadForm").submit(function(){
     var indata ={
       category: "submit",
@@ -22,15 +30,15 @@ $(document).ready(function(){
       data: indata,
       datatype:"json",
       success: function(data){
+        console.log(data);
         $('#editView').html("<div id='complete'>機体登録が完了しました</div>");
       },
       error: function(XMLHttpRequest, textStatus, errorThrown) {
-        alert( textStatus );
         alert( errorThrown );
       }
     });
     return false;
-  })
+  });
 
   function upload(file,targetimg) {
             $form = $('#uploadForm');
@@ -49,7 +57,6 @@ $(document).ready(function(){
                     $('#' + targetimg).attr("src",data);
                 },
                 error: function(XMLHttpRequest, textStatus, errorThrown,data) {
-                    alert( textStatus );
                     alert( errorThrown );
                 }
             });

@@ -8,16 +8,16 @@
 </head>
 <body>
 	<div id="FAnameField">
-		<span>{:: $ModelNumber :}  {:: $FAname  :}</span>
+		<span>{:: $memberLists[0]['ModelNumber'] :}  {:: $memberLists[0]['FAname']  :}</span>
 	</div>
 	<form action="/plana/upload.php" method="post" enctype="multipart/form-data" id="uploadForm">
 	<div id="SelectImageField">
 		<p>画像選択</p>
 		{: for($i=0;$i<=4;$i++) %then :}
 				<div id=uploadBox>
-					<img class="imageview" id="posing{::$i:}" src="img/camera.png" />
+					<img class="imageview" id="posing{::$i:}" src="<?php echo isset($memberLists[0]['position'.$i])?$memberLists[0]['position'.$i]:img/camera.pn ?>" />
 					<input id="posing{::$i:}" class="input" type="file" name="file" />
-					<input id="mm" type="hidden" name="modelnumber" value="{:: $ModelNumber :}" />
+					<input id="mm" type="hidden" name="modelnumber" value="{::$memberLists[0]['ModelNumber'] :}" />
 				</div>
 		{: %end :}
 
@@ -27,7 +27,7 @@
 		<p>
 			機体説明
 		</p>
-		<textarea id="desc"></textarea>
+		<textarea id="desc">{: include_once(dirname(__file__)."/../../".$memberLists[0]['description']) :}</textarea>
 	</div>
 	<button id="Submit">投稿する</button>
 </form>

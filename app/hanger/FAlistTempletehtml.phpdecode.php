@@ -9,7 +9,7 @@
 <body>
 <div id ="mainContainar">
   <div id="toplogo">
-    <img id="pic_logo" src=<?php echo "img/logo.png"; ?> >
+    <img id="pic_logo" src=<?php echo "img/hanger.png"; ?> >
   </div>
   <div id="teamContainar">
     <div id="Alpha" class="team"><img id="pic_t_alpha" src= <?php echo "img/teamAlpha.png"; ?> alt="α部隊"></div>

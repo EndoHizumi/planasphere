@@ -16,7 +16,7 @@
         <span>機体情報登録画面</span>
       </div>
       <ul>
-        {: foreach($numberlist as $number) %then :}
+        {: foreach($memberLists as $number) %then :}
         <li class="ModelNumber" modelNumber="{:: $number['ModelNumber'] :}">
           {:: $number['ModelNumber'] :}
         </li>

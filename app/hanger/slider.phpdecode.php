@@ -13,16 +13,17 @@
   </div>
   <div class="slider">
     <div id="viewArea">
-      <img id="view" src="<?php echo '/plana/'.$memberLists[0]['position1'] ?>"/>
+      <img id="view" src="<?php echo '/plana/'.$memberLists[0]['position0'] ?>"/>
     </div>
     <div id="thumbnail">
+      <img class=thumbnails src="<?php echo '/plana/'.$memberLists[0]['position0'] ?>" />
       <img class=thumbnails src="<?php echo '/plana/'.$memberLists[0]['position1'] ?>" />
       <img class=thumbnails src="<?php echo '/plana/'.$memberLists[0]['position2'] ?>" />
       <img class=thumbnails src="<?php echo '/plana/'.$memberLists[0]['position3'] ?>" />
       <img class=thumbnails src="<?php echo '/plana/'.$memberLists[0]['position4'] ?>" />
-      <img class=thumbnails src="<?php echo '/plana/'.$memberLists[0]['position5'] ?>" />
     </div>
   </div>
+  <input id="teams" type="hidden" name="team" value="<?php echo$memberLists[0]['Team'] ?>" />
   <div id="description">
     <?php include_once(dirname(__file__)."/../../".$memberLists[0]['description']) ?>
   </div>

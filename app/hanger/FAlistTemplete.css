@@ -20,7 +20,7 @@
 }
 #teamContent {
   display:inline-block;
-    margin-left: 14px;
+  margin-left: 8%;
 }
 .thumbnail {
     width: 150px;
@@ -39,8 +39,9 @@
   left: 2.5%;
   display:inline-block;
   margin: -0.5%;
-  width: 19.4%;
+  width: 15%;
   height: 100%;
+margin-right: 4%;
 }
 .team:hover{
   background-image: url(../../img/goldBar2.png);
@@ -93,4 +94,7 @@ a:hover{
   top:35px;
   left: 195px;
   font-size: small;
+}
+#username {
+    float: right;
 }

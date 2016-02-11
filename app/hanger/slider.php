@@ -13,16 +13,17 @@
   </div>
   <div class="slider">
     <div id="viewArea">
-      <img id="view" src="{:: '/plana/'.$memberLists[0]['position1'] :}"/>
+      <img id="view" src="{:: '/plana/'.$memberLists[0]['position0'] :}"/>
     </div>
     <div id="thumbnail">
+      <img class=thumbnails src="{:: '/plana/'.$memberLists[0]['position0'] :}" />
       <img class=thumbnails src="{:: '/plana/'.$memberLists[0]['position1'] :}" />
       <img class=thumbnails src="{:: '/plana/'.$memberLists[0]['position2'] :}" />
       <img class=thumbnails src="{:: '/plana/'.$memberLists[0]['position3'] :}" />
       <img class=thumbnails src="{:: '/plana/'.$memberLists[0]['position4'] :}" />
-      <img class=thumbnails src="{:: '/plana/'.$memberLists[0]['position5'] :}" />
     </div>
   </div>
+  <input id="teams" type="hidden" name="team" value="{::$memberLists[0]['Team'] :}" />
   <div id="description">
     {: include_once(dirname(__file__)."/../../".$memberLists[0]['description']) :}
   </div>

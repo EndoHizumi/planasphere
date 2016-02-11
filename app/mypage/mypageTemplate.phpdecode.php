@@ -16,7 +16,7 @@
         <span>機体情報登録画面</span>
       </div>
       <ul>
-        <?php foreach($numberlist as $number) { ?>
+        <?php foreach($memberLists as $number) { ?>
         <li class="ModelNumber" modelNumber="<?php echo $number['ModelNumber'] ?>">
           <?php echo $number['ModelNumber'] ?>
         </li>
