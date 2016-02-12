@@ -24,7 +24,7 @@ function ShowModelNumber($username){
 }
 
 function ShowFAInfo($ModelNumber){
-  return RunQuery("SELECT * FROM plana_members LEFT JOIN garage ON plana_members.ModelNumber = garage.ModelNumber
+  return RunQuery("SELECT plana_members.ModelNumber,plana_members.FAname, garage.position0, garage.position1, garage.position2, garage.position3, garage.position4, garage.description FROM plana_members LEFT JOIN garage ON plana_members.ModelNumber=garage.ModelNumber
 WHERE plana_members.`ModelNumber`=:ModelNumber ORDER BY `plana_members`.`ID` ASC ",":ModelNumber",$ModelNumber);
 }
 
