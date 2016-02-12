@@ -20,7 +20,9 @@
 }
 #teamContent {
   display:inline-block;
-  margin-left: 8%;
+}
+#teamContent span{
+  position: absolute;
 }
 .thumbnail {
     width: 150px;
@@ -56,9 +58,6 @@ margin-right: 4%;
 .member{
     position: relative;
     border: solid 1px #f1f1f1;
-}
-#teamContent span{
-  position: absolute;
 }
 
 .upper{

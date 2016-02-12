@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
   <title>機体一覧</title>
-  <link rel="stylesheet" href= "app/hanger/FAlistTemplete.css" type="text/css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src= "app/hanger/FAlist.js"></script>
@@ -21,7 +20,7 @@
   <div id="teamContent">
     <?php foreach($memberLists as $memberinfo){?>
       <div id ="<?php echo $memberinfo["ModelNumber"]; ?>" class="item">
-        <img class="thumbnail" src="{:: $memberinfo['position1'] :}">
+        <img class="thumbnail" src="{:: $memberinfo['position0']:}">
         <div class="FAname">{:: $memberinfo['ModelNumber'] :} <br /> {:: $memberinfo['FAname'] :} </div>
       </div>
       <?php } ?>

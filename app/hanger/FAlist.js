@@ -31,4 +31,4 @@ $('.no_image').error(function() {
               alt: 'no emblem'
           });
       });
-})
+});

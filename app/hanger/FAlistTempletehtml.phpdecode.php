@@ -21,7 +21,7 @@
   <div id="teamContent">
     <?php foreach($memberLists as $memberinfo){?>
       <div id ="<?php echo $memberinfo["ModelNumber"]; ?>" class="item">
-        <img class="thumbnail" src="<?php echo $memberinfo['position1'] ?>">
+        <img class="thumbnail" src="<?php echo $memberinfo['position0']?>">
         <div class="FAname"><?php echo $memberinfo['ModelNumber'] ?> <br /> <?php echo $memberinfo['FAname'] ?> </div>
       </div>
       <?php } ?>
