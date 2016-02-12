@@ -409,11 +409,11 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<link rel="stylesheet" href="app/reglations/reg.css" type="text/css">
-		<link rel="stylesheet" href= "app/member/listTemplete.css" type="text/css">
 		<link rel="stylesheet" href="mainpage.css" type="text/css">
 		<link rel="stylesheet" href="app/home/home.css" type="text/css">
 		<link rel="stylesheet" href="app/mypage/mypage.css" type="text/css">
 		<link rel="stylesheet" href= "app/hanger/FAlistTemplete.css" type="text/css">
+		<link rel="stylesheet" href= "app/member/listTemplete.css" type="text/css">
 		<link rel="stylesheet" href="app/hanger/slider.css" type="text/css" media="screen" />
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>

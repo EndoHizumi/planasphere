@@ -15,7 +15,7 @@ $(".item").click(function(){
     url:'app/index.php',
     data:'category=detail'+'&value='+$(this).attr("id"),
     success: function(data){
-      $("#mainContainar").html(data);
+      $("#mainFAlistContainar").html(data);
     }
   });
 });

@@ -10,7 +10,7 @@ $(document).ready(function(){
       url:'app/index.php',
       data:'category=hanger&value='+$("#teams").val(),
       success: function(data){
-        $("#mainContainar").html(data);
+        $("#mainFAlistContainar").html(data);
       }
     });
   });

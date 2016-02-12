@@ -24,6 +24,7 @@ $('.imageview').error(function() {
       modelnumber:$("#mm").val(),
       description: $("#desc").val()
     };
+    console.log($("#posing0").val());
     $.ajax({
       url: "/plana/app/index.php",
       type: "POST",
