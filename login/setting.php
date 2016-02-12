@@ -1,4 +1,0 @@
-<?php
-define( 'CONSUMER_KEY', 'YOU_CONSUMER_KEY' );
-define( 'CONSUMER_SECRET', 'YOU_CONSUMER_SECRET' );
-define( 'OAUTH_CALLBACK', 'YOU_CALLBACK' );
