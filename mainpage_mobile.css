@@ -1,7 +1,7 @@
 body{
 margin:0;
-background-image:url("bg/bg.png");
-background-position:center center;
+background-image:url("bg/0853.jpg");
+background-position:left top;
 background-repeat:no-repeat;
 background-attachment: fixed;
 background-size: cover;
@@ -42,12 +42,12 @@ opacity: 0.7;
 
 #wave{
 position:absolute;
-right:270px;
+right:55px;
 }
 
 #user{
 position:absolute;
-right:100px;
+left:0;
 top:4px;
 height:40px;
 width:152px;
@@ -107,7 +107,7 @@ line-height:21px;
 position:absolute;
 top:45px;
 width:100%;
-height:80%;
+height:82%;
 overflow:auto;
 }
 
@@ -119,84 +119,4 @@ width:100%;
 background-color:black;
 text-align:center;
 color:#f8f8f8;
-}
-
-@media screen and (max-width: 435px) {
-body{
-background-position:left top;
-}
-
-.app_buttons{
-display:inline-block;
-height:35px;
-width:35px;
-margin-top:5px;
-
-}
-
-.app_buttons:active{
-opacity: 0.7;
-}
-
-#btn_app02{
-margin-left:30px;
-}
-
-.staus_icons{
-display:inline-block;
-height:20px;
-width:25px;
-margin-top:15px;
-}
-
-.staus_icons:hover{
-opacity: 0.7;
-}
-
-#wave{
-right:55px;
-}
-
-#user{
-left:0px;
-}
-
-
-#content{
-position:absolute;
-top:45px;
-width:100%;
-height:90%;
-overflow:auto;
-}
-
-.twitter-timeline{
-float:right;
-margin-top:30px !important;
-width:250px !important;
-height:93% !important;
-}
-
-.footer{
-position:absolute;
-bottom:0;
-left:0;
-width:100%;
-background-color:black;
-text-align:center;
-color:#f8f8f8;
-}
-
-@media screen and (max-width: 320px) {
-
-.app_buttons{
-height:35px;
-margin-top:5px;
-}
-#btn_app02 {
- margin-left: 15px;
-}
-
-}
-
 }

@@ -8,18 +8,17 @@
 }
 #mainFAlistContainar{
   margin: 0px auto;
-  width: 745px;
+  max-width: 745px;
   background-color: #000;
   color: #FFF;
 }
 
 #listContainar{
-  width:100%;
-  height: 4.6%;
-
+  list-style: none;
+  display: inline-block;
+  font-size: 0;
 }
 #listContent {
-  display:inline-block;
 }
 #listContent span{
   position: absolute;
@@ -37,15 +36,6 @@
 .FAname {
     text-align: center;
 }
-.team{
-  position: relative;
-  left: 2.5%;
-  display:inline-block;
-  margin: -0.5%;
-  width: 15%;
-  height: 100%;
-margin-right: 4%;
-}
 .team:hover{
   background-image: url(../../img/goldBar2.png);
 }
@@ -61,39 +51,11 @@ margin-right: 4%;
     border: solid 1px #f1f1f1;
 }
 
-.upper{
-    top:10px;
-}
-
-.under{
-    top:30px;
-}
-
-#name{
-  left:54px;
-}
-
-#twitterid{
-  left:54px;
-}
 a{
     color:rgb(80,55,237);
 }
 a:hover{
   color:rgb(198,67,54);
-}
-
-.machine{
-  right:15px;
-}
-#emblem{
-  position: absolute;
-  left: 195px;
-}
-#constel{
-  top:35px;
-  left: 195px;
-  font-size: small;
 }
 #username {
     float: right;

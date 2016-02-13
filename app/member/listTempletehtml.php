@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <head>
   <title>メンバーリスト</title>
-  <link rel="stylesheet" href= "app/member/listTemplete.css" type="text/css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src= "app/member/list.js"></script>
 </head>
 <body>
-<div id="toplogo">
-  <img id="pic_logo" src=<?php echo "img/logo.png"; ?> >
-</div>
 <div id ="mainContainar">
+  <div id="toplogo">
+    <img id="pic_logo" src=<?php echo "img/logo.png"; ?> >
+  </div>
   <div id="teamContainar">
     <div id="Alpha" class="team"><img id="pic_t_alpha" src= <?php echo "img/teamAlpha.png"; ?> alt="α部隊"></div>
     <div id="Beta" class="team"><img id="pic_t_beta" src= <?php echo "img/teamBeta.png"; ?> alt="β部隊"></div>
@@ -23,7 +22,7 @@
       <div id ="<?php echo $memberinfo["ID"]; ?>" class="member">
         <img width="48px" height="48px" id="icon" class="no_image" src= <?php require_once("/GetTwitterIcon.php"); echo(GetUsericon($memberinfo["TwitterID"],"normal")); ?>>
         <span id="name" class="upper"><?php echo $memberinfo["Name"]; ?></span>
-        <a href="http://twitter.com/<?php echo $memberinfo["TwitterID"]; ?>">
+        <a id="twitterIDAncher" href="http://twitter.com/<?php echo $memberinfo["TwitterID"]; ?>">
           <span id="twitterid" class="under"><?php echo $memberinfo["TwitterID"]; ?></span>
         </a>
         <img width="25px" height="44px" id="emblem" class="no_emblem" src=<?php echo "img/"; echo $memberinfo["emblem"]; ?>>
