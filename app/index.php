@@ -1,7 +1,6 @@
 ﻿<?php
 session_start();
 //Controller
-ini_set("display_errors", 0);
  if($_SERVER["REQUEST_METHOD"]=='GET'){
     $category = isset($_GET["category"])?$_GET["category"]:"team";
     $value = isset($_GET["value"])?$_GET["value"]:"Alpha";
