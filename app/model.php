@@ -24,7 +24,7 @@ function ShowModelNumber($username){
 }
 
 function ShowFAInfo($ModelNumber){
-  return RunQuery("SELECT plana_members.ModelNumber,plana_members.FAname, garage.position0, garage.position1, garage.position2, garage.position3, garage.position4, garage.description FROM plana_members LEFT JOIN garage ON plana_members.ModelNumber=garage.ModelNumber
+  return RunQuery("SELECT plana_members.ModelNumber,plana_members.Name,plana_members.Team,plana_members.FAname, garage.position0, garage.position1, garage.position2, garage.position3, garage.position4, garage.description FROM plana_members LEFT JOIN garage ON plana_members.ModelNumber=garage.ModelNumber
 WHERE plana_members.`ModelNumber`=:ModelNumber ORDER BY `plana_members`.`ID` ASC ",":ModelNumber",$ModelNumber);
 }
 
@@ -37,6 +37,15 @@ function ShowFAlist($teamname){
 WHERE `team` = :team AND `position1` IS NOT NULL ORDER BY `plana_members`.`ID` ASC ",":team",$teamname);
 }
 
+function GetUserName($sessionID){
+ return RunQuery("SELECT userName,profileImage FROM users WHERE sessionid=:sessionid",":sessionid",$sessionID);
+}
+function GetTwitterID($sessionID){
+ return RunQuery("SELECT TwitterID FROM users WHERE sessionid=:sessionid",":sessionid",$sessionID);
+}
+function GetIPAdress($value){
+ return RunQuery("SELECT ipadress from users WHERE ipadress= :ipadress",":ipadress",$value);
+}
 
 function escapehtml($htmlcode){
   return strip_tags($htmlcode ,"<br>");

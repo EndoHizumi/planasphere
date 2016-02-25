@@ -2,8 +2,8 @@
 session_start();
 //Controller
  if($_SERVER["REQUEST_METHOD"]=='GET'){
-    $category = isset($_GET["category"])?$_GET["category"]:"team";
-    $value = isset($_GET["value"])?$_GET["value"]:"Alpha";
+    $category = empty($_GET["category"])?"team":$_GET["category"];
+    $value = empty($_GET["value"])?"Alpha":$_GET["value"];
     switch ($category) {
      case 'team':
        require("view.php");
@@ -29,7 +29,8 @@ session_start();
        CretatePage($category,$value,"hanger/slider.php","ShowFAInfo");
      break;
      default:
-       return;
+     require("view.php");
+     CretatePage("team","Alpha","member/listTempletehtml.php","ShowTeamMembers");
      break;
     }
  }else if($_SERVER["REQUEST_METHOD"]=='POST'){

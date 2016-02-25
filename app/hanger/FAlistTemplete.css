@@ -16,9 +16,10 @@
 #listContainar{
   list-style: none;
   display: inline-block;
-  font-size: 0;
+  width: 100%;
 }
 #listContent {
+  margin-top: 10px;
 }
 #listContent span{
   position: absolute;
@@ -36,7 +37,15 @@
 .FAname {
     text-align: center;
 }
-.team:hover{
+.FAteam{
+  position: relative;
+  left: 2.5%;
+  display: inline-block;
+  margin-right: 5%;
+  width: 14.4%;
+  height: 100%;
+}
+.FAteam:hover{
   background-image: url(../../img/goldBar2.png);
 }
 #Others:hover{
