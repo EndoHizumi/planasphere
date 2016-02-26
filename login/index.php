@@ -40,7 +40,7 @@ if($mode=="login"){
       var ua = navigator.userAgent;
       $(\"#containar\").fadeOut(\"slow\",function(){
         if ((ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('iPhone') > 0 || ua.indexOf('Blackberry') > 0 || ua.indexOf('iPad') > 0){
-          location.replace(\"/plana/mobile_main.php\");
+          location.replace(\"/plana/main_mobile.php\");
         }else{
           location.replace(\"/plana/main.php\");
         }

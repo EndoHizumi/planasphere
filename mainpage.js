@@ -1,10 +1,9 @@
 $(document).ready(function(){
-var login = false;
 var ua = navigator.userAgent;
 		$("#btn_app01").click(function(){
 			window.location.reload();
 		  });
-			$("#btn_app02").click(function(){	$("#content").load("app/index.php?category=hanger&value=Alpha",function(){
+			$("#btn_app02").click(function(){	$("#content").load("app/index.php?category=hanger&value=Alpha",function(){//作品一覧ページのリンクをクリックまたはタップしたときの挙動
 						if ((ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('iPhone') > 0 || ua.indexOf('Blackberry') > 0 || ua.indexOf('iPad') > 0){
 							$("#containar").animate({
 								height:"90%"
@@ -17,7 +16,7 @@ var ua = navigator.userAgent;
 
 					});
 			});
-		$("#btn_app03").click(function(){	$("#content").load("app/index.php?category=team&value=Alpha",function(){
+		$("#btn_app03").click(function(){	$("#content").load("app/index.php?category=team&value=Alpha",function(){//参加メンバー一覧のページのリンクをクリックまたはタップしたときの挙動
 					if ((ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('iPhone') > 0 || ua.indexOf('Blackberry') > 0 || ua.indexOf('iPad') > 0){
 						$("#containar").animate({
 							height:"90%"
@@ -30,7 +29,7 @@ var ua = navigator.userAgent;
 
 				});
 		});
-		$("#uList02").click(function(){	$("#content").load("app/index.php?category=mypage",function(){
+		$("#uList02").click(function(){	$("#content").load("app/index.php?category=mypage",function(){//作品投稿ページのリンクをクリックまたはタップしたときの挙動
 					if ((ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('iPhone') > 0 || ua.indexOf('Blackberry') > 0 || ua.indexOf('iPad') > 0){
 						$("#containar").animate({
 							height:"90%"
@@ -43,7 +42,7 @@ var ua = navigator.userAgent;
 
 				});
 		});
-		$("#btn_app04").click(function(){	$("#content").load("app/reglations/regulations.php",function(){
+		$("#btn_app04").click(function(){	$("#content").load("app/reglations/regulations.php",function(){//ルールのリンクをクリックまたはタップしたときの挙動
 					if ((ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0) || ua.indexOf('iPhone') > 0 || ua.indexOf('Blackberry') > 0 || ua.indexOf('iPad') > 0){
 						$("#containar").animate({
 							height:"90%"
@@ -56,7 +55,7 @@ var ua = navigator.userAgent;
 
 				});
 		});
-			$("#btn_app05").click(function(){
+			$("#btn_app05").click(function(){//プラナスフィアの公式Twiiterへ新しいタブで開く
 					window.open("http://twitter.com/planisphere00");
 		  });
 
@@ -64,10 +63,10 @@ var ua = navigator.userAgent;
 					location.replace("login/login.php");
 			});
 			$("#uList05").click(function(){
-					location.replace("app/index.php?category=logout");
+					location.replace("login/logout.php");
 			});
 
-			$("#uList03").click(function(){
+			$("#uList03").click(function(){//アップデートログを見るのボタンを押したときの挙動
 				$("#wel_content").css("display","none");
 				$("#wel_content").animate({left:"-450px"},500);
 						$("#welcome").animate({
@@ -75,31 +74,21 @@ var ua = navigator.userAgent;
 						},500,function(){
 									$.ajax({
 										url:"app/home/history.html",
-										success: function(data) {
-										$("#welcome").append(data);
-										}
+											success: function(data) {
+												$("#welcome").append(data);
+											}
 									});
 						});
 			});
 
 		$("#user").hover(
-			function () {
+			function () {//マウスポインタが乗るまたはタップされたとき
 				$("#user ul").show();
-				if(login==false){
-					$(".login_later").hide();
-					$("#uList04").show();
-					$("#user").stop(true,true).animate({
-						height:"120px"
-					},500);
-				}else{
-					$(".login_later").show();
-					$("#uList04").hide();
-					$("#user").stop(true,true).animate({
-						height:"210px"
-					},500);
-				}
+				$("#user").stop(true,true).animate({
+					height:"120px"
+				},500);
 			},
-			function () {
+			function () {//マウスまたは指が離れたとき
 				$("#user").animate({
 					height:"40px"
 				},500,function(){
@@ -114,7 +103,7 @@ var ua = navigator.userAgent;
 		};
 
 	function clock(mode){
-		if (mode=="mobile"){
+		if (mode=="mobile"){//スマートフォンの場合はTrue
 			var now = new Date();
 
 			var hour = now.getHours(); // 時

@@ -59,7 +59,7 @@ function savehtml($path,$data){
   return file_put_contents($path, $data);
 }
 
-function RunQuerys($query,$placeHolder,$param){
+function RunQuerys($query,$placeHolder,$param){//プレースホルダとパラメータの配列対応版
   $count1 = count($placeHolder);
   if($count1!=count($param)) return $exceptionArray=["Error"=>"Exception","ErrorMsg"=>"invalid paramerters."];
   global $pdo;
@@ -81,7 +81,7 @@ function RunQuerys($query,$placeHolder,$param){
   }
 
 
-function RunQueryLite($query){
+function RunQueryLite($query){//固定のクエリ実行用
   global $pdo;
   connect();
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -97,7 +97,7 @@ function RunQueryLite($query){
 
 }
 
-function RunQueryNR($query,$placeHolder,$param){
+function RunQueryNR($query,$placeHolder,$param){//NR = Not Returnの略,処理が正常終了したときは値を返さない.
   global $pdo;
   connect();
   $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
