@@ -428,11 +428,11 @@
 	<body>
 
 		<div id="navibar">
-			<img class="app_buttons" id="btn_app01" src="img/planamoonNL.png" onClick="">
-			<img class="app_buttons" id="btn_app02" src="img/grage.png">
-			<img class="app_buttons" id="btn_app03" src="img/member.png">
-			<img class="app_buttons" id="btn_app04" src="img/abount.png">
-			<img class="app_buttons" id="btn_app05" src="img/contact.png">
+			<img class="app_buttons action" id="btn_app01" src="img/planamoonNL.png" onClick="">
+			<img class="app_buttons action" id="btn_app02" src="img/grage.png">
+			<img class="app_buttons action" id="btn_app03" src="img/member.png">
+			<img class="app_buttons action" id="btn_app04" src="img/abount.png">
+			<img class="app_buttons action" id="btn_app05" src="img/contact.png">
 			<img class="status_icons" id="wave" src="img/wave.png">
 			<?php include("userMenu.php") ?>
 			<span  class="clock" id="time" ></span>

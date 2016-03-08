@@ -7,6 +7,7 @@ background-attachment: fixed;
 background-size: cover;
 background-color:#000000;
 color:#f8f8f8;
+font-family: ArialMT, "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", メイリオ, sans-serif;
 }
 
 #navibar{
@@ -42,7 +43,7 @@ opacity: 0.7;
 
 #wave{
 position:absolute;
-right:55px;
+right:70px;
 }
 
 #user{
@@ -85,7 +86,7 @@ width:32px;
 
 #clock{
 position:absolute;
-right:25px;
+right:40px;
 font-size:large;
 font-weight: bold;
 text-align:center;
