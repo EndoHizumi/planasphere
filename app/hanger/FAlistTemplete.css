@@ -39,9 +39,10 @@
 }
 .FAteam{
   position: relative;
+  left: 2.5%;
   display: inline-block;
-  width: 30%;
-  height: 100%;
+  margin-right: 5%;
+  width: 14.4%;
 }
 .FAteam:hover{
   background-image: url(../../img/goldBar2.png);

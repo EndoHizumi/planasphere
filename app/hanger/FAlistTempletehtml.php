@@ -21,7 +21,7 @@
     <?php foreach($memberLists as $memberinfo){?>
       <div id ="<?php echo $memberinfo["ModelNumber"]; ?>" class="item">
         <img class="thumbnail" src="{:: $memberinfo['position0']:}">
-        <div class="FAname">{:: $memberinfo['ModelNumber'] :} <br /> {:: $memberinfo['FAname'] :} </div>
+        <div class="FAname">{:: $memberinfo['ModelNumber'] :} <br /> {:: mb_strimwidth($memberinfo['FAname'],0,18,"...","UTF-8"  ) :} </div>
       </div>
       <?php } ?>
   </div>
