@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$(".team").click(function(){
+$(".FAteam").click(function(){
   $.ajax({
     type:'GET',
     url:'app/index.php',

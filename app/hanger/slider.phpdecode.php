@@ -25,6 +25,7 @@
   </div>
   <input id="teams" type="hidden" name="team" value="<?php echo$memberLists[0]['Team'] ?>" />
   <div id="description">
+    <div id="descriptonBar">機体説明</div>
     <?php include_once(dirname(__file__)."/../../".$memberLists[0]['description']) ?>
   </div>
 </body>

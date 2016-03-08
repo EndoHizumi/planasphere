@@ -1,6 +1,5 @@
 #view{
   width: 100%;
-  height: 500px;
 }
 #thumbnail > img{
   position: relative;
@@ -15,29 +14,28 @@
 #detail_title{
   position: relative;
   width:100%;
-  height:35px;
+  height:50px;
   background-color: #333;
 }
 
 #detail_title > span{
-  display: inline-block;
-  position: relative;
-  top: 25%;
+  display: block;
+  text-align:  center;
 }
-#FAinfo{
-  left:5%;
-}
-#username {
-    float: right;
-}
-
 
 #back{
   width: 25px;
-      height: 30px;
-      position: absolute;;
-      top: 2px;
+  height: 30px;
+  position: absolute;;
+  top: 10px;
 }
 #back:hover{
   background-color:rgba(74,70,73,0.7);
+}
+
+#descriptonBar{
+  width: 99%;
+  height: 35px;
+  font-size: x-large;
+  background-color: #333;
 }
