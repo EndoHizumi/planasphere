@@ -1,0 +1,66 @@
+
+#logo{
+  height:100%;
+}
+#pic_logo{
+  display:block;
+  margin:0 auto;
+}
+#mainFAlistContainar{
+  margin: 0px auto;
+  max-width: 745px;
+  background-color: #000;
+  color: #FFF;
+}
+
+#listContainar{
+  list-style: none;
+  display: inline-block;
+  width: 97%;
+  margin-left: 3%;
+}
+#listContent {
+  margin-top: 10px;
+}
+#listContent span{
+  position: absolute;
+}
+.thumbnail {
+    width: 150px;
+    height: 100px;
+}
+.item{
+  display: inline-block;
+  width: 150px;
+  margin-left: 23px;
+}
+.FAname {
+    text-align: center;
+}
+.FAteam{
+  position: relative;
+  display: inline-block;
+  width: 30%;
+  height: 100%;
+}
+.FAteam:hover{
+  background-image: url(../../img/goldBar2.png);
+}
+#Others:hover{
+  background-image: url(../../img/redBar.png);
+}
+#Lost:hover{
+  background-image: url(../../img/brownsBar.png);
+}
+
+.member{
+    position: relative;
+    border: solid 1px #f1f1f1;
+}
+
+a{
+    color:rgb(80,55,237);
+}
+a:hover{
+  color:rgb(198,67,54);
+}

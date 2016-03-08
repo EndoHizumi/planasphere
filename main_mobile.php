@@ -413,7 +413,7 @@
 		<link rel="stylesheet" href="mainpage_mobile.css" type="text/css">
 		<link rel="stylesheet" href="app/home/home.css" type="text/css">
 		<link rel="stylesheet" href="app/mypage/mypage.css" type="text/css">
-		<link rel="stylesheet" href= "app/hanger/FAlistTemplete.css" type="text/css">
+		<link rel="stylesheet" href= "app/hanger/FAlistTemplete_mobile.css" type="text/css">
 		<link rel="stylesheet" href="app/hanger/slider_mobile.css" type="text/css" media="screen" />
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
