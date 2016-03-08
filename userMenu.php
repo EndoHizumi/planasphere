@@ -2,7 +2,7 @@
 require("app/model.php");
 $userInfoDefault = [["userName"=>"Guest","profileImage"=>"icons/guest.png"]];
   $clientAdress= $_SERVER["REMOTE_ADDR"];
-  $logined =  $_SESSION['logined'];
+  $logined =  empty($_SESSION['logined'])?false:$_SESSION['logined'];
 
   $RegistrationAdress= GetIPAdress($clientAdress);//渡されたIPアドレスが登録されいるかDBへ問い合わせるメソッド
   if(isset($RegistrationAdress)){
