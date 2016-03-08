@@ -16,7 +16,8 @@
 #listContainar{
   list-style: none;
   display: inline-block;
-  width: 100%;
+  width: 97%;
+  margin-left: 3%;
 }
 #listContent {
   margin-top: 10px;
@@ -27,22 +28,19 @@
 .thumbnail {
     width: 150px;
     height: 100px;
-    margin-left: 28px;
 }
 .item{
   display: inline-block;
-  width: 200px;
-  margin-left: 30px;
+  width: 150px;
+  margin-left: 23px;
 }
 .FAname {
     text-align: center;
 }
 .FAteam{
   position: relative;
-  left: 2.5%;
   display: inline-block;
-  margin-right: 5%;
-  width: 14.4%;
+  width: 30%;
   height: 100%;
 }
 .FAteam:hover{

@@ -1,3 +1,4 @@
+$("#content").scrollTop(0); 
 $(document).ready(function(){
   $(".thumbnails").click(function(){
     if($(this).attr("src")!="/plana/img/camera.png"){

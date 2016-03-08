@@ -1,3 +1,4 @@
+$("#content").scrollTop(0); 
 $(document).ready(function(){
 $(".FAteam").click(function(){
   $.ajax({
