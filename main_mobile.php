@@ -420,7 +420,7 @@
 		<script type="text/javascript" src="jquery.cookie.js"></script>
 		<script src="mainpage.js"></script>
 
-		<title>PlanOS Ver 0.8  build 20160102 </title>
+		<title>PlanOS Ver 1.0  build 160316 </title>
 		<meta name="keywords" content="Planasphere プラナスフィア フレームアームズ" />
 		<meta name="description" content="月陣営の独立FA部隊 プラナスフィアのホームページです。" />
 		<meta name="copyright" content="WinvisSoftwareFactory/Planasphere 2015" />
@@ -429,7 +429,6 @@
 
 		<div id="navibar">
 			<?php include("userMenu.php") ?>
-			<img class="status_icons" id="wave" src="img/wave.png">
 			<span  id="clock" class="status_icons" >17:56</span>
 		</div>
 		<div id="content">
