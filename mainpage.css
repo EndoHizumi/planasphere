@@ -13,7 +13,7 @@ font-family: ArialMT, "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", �
 #navibar{
 height:43px;
 width:100%;
-background-color:rgba(0,0,0,0.3);
+background-color:rgba(0,0,0,0.7);
 }
 
 .app_buttons{
@@ -176,6 +176,7 @@ overflow:auto;
 float:right;
 width:250px !important;
 height:100% !important;
+border: 1px solid #636363 !important;;
 }
 
 
