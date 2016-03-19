@@ -176,6 +176,14 @@ height:90%;
 overflow:auto;
 }
 
+
+.twitter-timeline{
+float:right;
+width:250px !important;
+height:100% !important;
+border: 1px solid #636363 !important;;
+}
+
 @media screen and (max-width: 320px) {
 
 .app_buttons{
