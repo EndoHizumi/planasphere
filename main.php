@@ -420,7 +420,7 @@
 		<script type="text/javascript" src="jquery.cookie.js"></script>
 		<script src="mainpage.js"></script>
 
-		<title>PlanOS Ver 0.8  build 20160102 </title>
+		<title>PlanOS </title>
 		<meta name="keywords" content="Planasphere プラナスフィア フレームアームズ" />
 		<meta name="description" content="月陣営の独立FA部隊 プラナスフィアのホームページです。" />
 		<meta name="copyright" content="WinvisSoftwareFactory/Planasphere 2015" />
@@ -433,7 +433,6 @@
 			<img class="app_buttons action" id="btn_app03" src="img/member.png">
 			<img class="app_buttons action" id="btn_app04" src="img/abount.png">
 			<img class="app_buttons action" id="btn_app05" src="img/contact.png">
-			<img class="status_icons" id="wave" src="img/wave.png">
 			<?php include("userMenu.php") ?>
 			<span  class="clock" id="time" ></span>
 			<span  class="clock" id="date" ></span>
@@ -443,7 +442,7 @@
 			<script type="text/javascript">clock();$("#content").load("app/home/home.html");</script>
 		</div>
 		<div class="footer">
-			<span id="copyright" class="footer">Copyright : WinvisSoftwareFactory/Planasphere 2015</span>
+			<span id="copyright" class="footer">PlanOS Ver 1.0  build 160316<br /> Copyright : WinvisSoftwareFactory/Planasphere 2016</span>
 		</div>
 	</body>
 </html>

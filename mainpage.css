@@ -1,6 +1,6 @@
 body{
 margin:0;
-background-image:url("bg/0853.jpg");
+background-image:url("bg/bg.png");
 background-position:center center;
 background-repeat:no-repeat;
 background-attachment: fixed;
@@ -13,7 +13,7 @@ font-family: ArialMT, "Hiragino Maru Gothic Pro", "ヒラギノ丸ゴ Pro W4", �
 #navibar{
 height:43px;
 width:100%;
-background-color:rgba(0,0,0,0.3);
+background-color:rgba(0,0,0,0.7);
 }
 
 .app_buttons{
@@ -109,18 +109,22 @@ line-height:21px;
 position:absolute;
 top:45px;
 width:100%;
-height:92%;
+height:95%;
 overflow:auto;
 }
+#content > div{
+  border: 1px solid #252525;
+  box-shadow: 5px 5px 10px 0px #252525;
+}
 
-.footer{
+.footer {
 position:absolute;
 bottom:0;
 left:0;
 width:100%;
-background-color:black;
-text-align:center;
+text-align:left;
 color:#f8f8f8;
+z-index: -100;
 }
 
 @media screen and (max-width: 435px) {
@@ -170,23 +174,6 @@ top:45px;
 width:100%;
 height:90%;
 overflow:auto;
-}
-
-.twitter-timeline{
-float:right;
-margin-top:30px !important;
-width:250px !important;
-height:93% !important;
-}
-
-.footer{
-position:absolute;
-bottom:0;
-left:0;
-width:100%;
-background-color:black;
-text-align:center;
-color:#f8f8f8;
 }
 
 @media screen and (max-width: 320px) {

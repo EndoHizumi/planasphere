@@ -1,6 +1,6 @@
 ﻿$(document).ready(function(){;
 	$("#welcome").fadeIn("slow");
-	
+
 	$("#btn_cross").click(function(){
 		$("#history").hide();
 		$("#welcome").animate({
@@ -10,12 +10,12 @@
 				});
 	});
 
-	
+
 	$("#btn_history").click(function(){
 		$("#wel_content").css("display","none");
 		$("#wel_content").animate({left:"-450px"},500);
 				$("#welcome").animate({
-					width:"100%"
+					width:"95%"
 				},500,function(){
 							$.ajax({
 								url:"app/home/history.html",
