@@ -8,6 +8,7 @@ CREATE TABLE plana_members (
   Team varchar(255) not null,
   ModelNumber varchar(255),
   TwitterID varchar(255),
+  emblem varchar(255),
   primary key (id)
 );
 
