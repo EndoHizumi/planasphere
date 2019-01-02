@@ -13,6 +13,8 @@ $RECYCLE.BIN/
 *.msi
 *.msm
 *.msp
+.history
+data/mysql/
 
 # Windows shortcuts
 *.lnk

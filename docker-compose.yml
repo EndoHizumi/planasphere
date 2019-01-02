@@ -1,0 +1,22 @@
+version: "2"
+services:
+
+  plana:
+    build: .
+    tty: true
+    volumes: 
+      - ./plana:/var/www/html
+    ports:
+      - 80:80
+    container_name: plana_planOS
+   
+  mysql:
+    image: mysql:5.5
+    volumes:
+    -  ./data/mysql:/var/lib/mysql 
+    - ./data/my.cnf:/etc/mysql/conf.d/my.cnf
+    - ./data/init/:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: php1850
+      MYSQL_DATABASE: planasphere
+    container_name: plana_Db
