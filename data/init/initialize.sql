@@ -1,4 +1,4 @@
-CREATE planasphere
+CREATE DATABASE IF NOT EXISTS planasphere;
 USE planasphere;
 
 CREATE TABLE plana_members (
