@@ -19,4 +19,5 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: php1850
       MYSQL_DATABASE: planasphere
+    #command: ["/docker-entrypoint-initdb.d"]
     container_name: plana_Db
