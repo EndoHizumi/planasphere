@@ -1,4 +1,5 @@
 ﻿<?php
+error_reporting(0);
 session_start();
 //Controller
  if($_SERVER["REQUEST_METHOD"]=='GET'){
